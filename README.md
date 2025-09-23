@@ -7,3 +7,4 @@ An Electron-based desktop application that automatically organises your files by
 ### Icons
 
 - Organise icons created by [Freepik - Flaticon](https://www.flaticon.com/free-icons/organize)
+- Open folder icons created by [NajmunNahar - Flaticon](https://www.flaticon.com/free-icons/open-folder)
