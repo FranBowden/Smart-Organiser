@@ -1,0 +1,24 @@
+{
+  "name": "smart-organiser",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/FranBowden/Smart-Organiser#readme",
+  "bugs": {
+    "url": "https://github.com/FranBowden/Smart-Organiser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranBowden/Smart-Organiser.git"
+  },
+  "license": "ISC",
+  "author": "Francesca Bowden",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^38.1.2"
+  }
+}
