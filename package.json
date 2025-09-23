@@ -13,12 +13,33 @@
   "license": "ISC",
   "author": "Francesca Bowden",
   "type": "commonjs",
-  "main": "main.js",
+  "main": "src/main/main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "electron": "^38.1.2"
+  },
+  "build": {
+    "appId": "com.FrancescaBowden.smart-organiser",
+    "productName": "Smart File Organiser",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "icon": "src/assets/icons/app-icon.ico"
+    },
+    "mac": {
+      "icon": "src/assets/icons/app-icon.icns"
+    },
+    "linux": {
+      "icon": "src/assets/icons/app-icon.png"
+    }
   }
 }
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+
+    <link rel="icon" type="image/png" href="assets/icons/icon-16x16.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Smart File Organiser</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <h1>Smart File Organiser</h1>
+      <p>Organise your files with ease</p>
+    </header>
+
+    <!--Main content-->
+    <main>
+      <section>
+        <button id="Organise-btn">Organise</button>
+      </section>
+
+      <section class="folder-section">
+        <h2>Source Folder</h2>
+        <div class="folder-input">
+          <input
+            type="text"
+            id="sourcePath"
+            placeholder="Select folder to organize..."
+            readonly
+          />
+          <button id="selectSourceBtn" class="btn btn-primary">Browse</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
