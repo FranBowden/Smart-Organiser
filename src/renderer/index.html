@@ -25,10 +25,7 @@
 
     <!--Main content-->
     <main>
-      <section>
-        <button id="Organise-btn">Organise</button>
-      </section>
-
+      <!--Source folder selection-->
       <section class="folder-section">
         <h2>Source Folder</h2>
         <div class="folder-input">
@@ -38,9 +35,16 @@
             placeholder="Select folder to organize..."
             readonly
           />
-          <button id="selectSourceBtn" class="btn btn-primary">Browse</button>
+          <button id="selectSourceBtn" class="browse-btn">Browse</button>
         </div>
       </section>
+
+      <!--Organise button-->
+      <section>
+        <button id="organise-btn">Organise</button>
+      </section>
     </main>
+
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

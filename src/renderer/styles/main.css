@@ -1,1 +1,128 @@
 /*style sheet*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #44abc7;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+header p {
+  margin: 5px 0 15px 0;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.folder-section {
+  width: min(90%, 500px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.folder-section h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: clamp(16px, 2.5vw, 18px);
+  color: #333;
+}
+
+.folder-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: clamp(14px, 2vw, 16px);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #44abc7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+#organise-btn {
+  height: 50px;
+  margin-top: 20px;
+  font-size: 24px;
+  display: block;
+}
+
+/* Mobile-first responsive breakpoints */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  .folder-section {
+    width: 95%;
+  }
+
+  .folder-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    margin-bottom: 10px;
+    min-width: unset;
+  }
+
+  button {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  #organise-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .folder-section {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
